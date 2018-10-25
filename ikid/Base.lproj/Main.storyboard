@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ikid" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcO-gw-iE6">
+                                <rect key="frame" x="91" y="302" width="193" height="63"/>
+                                <color key="backgroundColor" red="0.83642325129999995" green="0.070588781190000005" blue="0.0" alpha="0.52561069540000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="193" id="OhP-kW-IYU"/>
+                                    <constraint firstAttribute="height" constant="63" id="qBJ-9d-Xcc"/>
+                                </constraints>
+                                <state key="normal" title="See Some Jokes">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fa8-E6-cN8" kind="show" id="BPK-iv-F0L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rcO-gw-iE6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mOY-3v-zpE"/>
+                            <constraint firstItem="rcO-gw-iE6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="t3W-fT-8i0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="86.806596701649184"/>
+        </scene>
+        <!--CSE Jokes-->
+        <scene sceneID="8ZJ-LP-Fct">
+            <objects>
+                <viewController id="2he-nf-j0x" customClass="JokeViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oAO-VU-MQg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CSE Joke" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bT2-c5-ydC">
+                                <rect key="frame" x="119.5" y="65" width="136" height="48"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXD-u0-699">
+                                <rect key="frame" x="129.5" y="513" width="116" height="60"/>
+                                <color key="backgroundColor" red="0.83642325129999995" green="0.070588781190000005" blue="0.0" alpha="0.52561069540000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="6iW-rD-d1R"/>
+                                    <constraint firstAttribute="width" constant="116" id="CLy-dv-2mD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="32"/>
+                                <state key="normal" title="Flip">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="CSEFlip:" destination="2he-nf-j0x" eventType="touchUpInside" id="hkl-GC-Sdi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are my chances at getting into UW CSE?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m75-FK-kYy">
+                                <rect key="frame" x="20" y="305.5" width="335" height="56"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="m75-FK-kYy" firstAttribute="leading" secondItem="5ci-tm-nzh" secondAttribute="leading" constant="20" id="EvK-js-day"/>
+                            <constraint firstItem="5ci-tm-nzh" firstAttribute="bottom" secondItem="dXD-u0-699" secondAttribute="bottom" constant="45" id="Fei-Rg-6TY"/>
+                            <constraint firstItem="bT2-c5-ydC" firstAttribute="top" secondItem="5ci-tm-nzh" secondAttribute="top" constant="45" id="HIu-hj-PFA"/>
+                            <constraint firstItem="dXD-u0-699" firstAttribute="centerX" secondItem="oAO-VU-MQg" secondAttribute="centerX" id="ToZ-Lq-u0S"/>
+                            <constraint firstItem="m75-FK-kYy" firstAttribute="centerY" secondItem="oAO-VU-MQg" secondAttribute="centerY" id="Val-Yt-ARX"/>
+                            <constraint firstAttribute="trailing" secondItem="m75-FK-kYy" secondAttribute="trailing" constant="20" id="iYg-iJ-tJP"/>
+                            <constraint firstItem="bT2-c5-ydC" firstAttribute="centerX" secondItem="oAO-VU-MQg" secondAttribute="centerX" id="qTi-og-jDb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5ci-tm-nzh"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="CSE Jokes" id="Zd3-cF-1Ms"/>
+                    <connections>
+                        <outlet property="CSELabel" destination="m75-FK-kYy" id="R3R-Rh-wGR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HTI-7N-53G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2746" y="87"/>
+        </scene>
+        <!--Political Jokes-->
+        <scene sceneID="Qbn-ao-ZYO">
+            <objects>
+                <viewController id="mWI-s9-Tvn" customClass="JokeViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BGK-fU-j73">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Political Joke" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8x-8I-iUv">
+                                <rect key="frame" x="89.5" y="65" width="196" height="48"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejE-T4-FkU">
+                                <rect key="frame" x="129.5" y="513" width="116" height="60"/>
+                                <color key="backgroundColor" red="0.83642325129999995" green="0.070588781190000005" blue="0.0" alpha="0.52561069540000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ebT-s1-7zr"/>
+                                    <constraint firstAttribute="width" constant="116" id="inw-fM-ECJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="32"/>
+                                <state key="normal" title="Flip">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="politicFlip:" destination="mWI-s9-Tvn" eventType="touchUpInside" id="Sdf-dG-d4n"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The 2016 U.S. Presidential Election." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pA-9j-JjH">
+                                <rect key="frame" x="20" y="305.5" width="335" height="56"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="D8x-8I-iUv" firstAttribute="top" secondItem="Nz9-QI-kLJ" secondAttribute="top" constant="45" id="AsM-jH-0tL"/>
+                            <constraint firstItem="2pA-9j-JjH" firstAttribute="centerY" secondItem="BGK-fU-j73" secondAttribute="centerY" id="LZf-Fl-E6M"/>
+                            <constraint firstItem="2pA-9j-JjH" firstAttribute="leading" secondItem="Nz9-QI-kLJ" secondAttribute="leading" constant="20" id="QLL-uw-VRH"/>
+                            <constraint firstItem="Nz9-QI-kLJ" firstAttribute="bottom" secondItem="ejE-T4-FkU" secondAttribute="bottom" constant="45" id="XEc-5Y-fRu"/>
+                            <constraint firstItem="D8x-8I-iUv" firstAttribute="centerX" secondItem="BGK-fU-j73" secondAttribute="centerX" id="jYK-Bg-Ghf"/>
+                            <constraint firstItem="ejE-T4-FkU" firstAttribute="centerX" secondItem="BGK-fU-j73" secondAttribute="centerX" id="lcB-5L-Gte"/>
+                            <constraint firstItem="Nz9-QI-kLJ" firstAttribute="trailing" secondItem="2pA-9j-JjH" secondAttribute="trailing" constant="20" id="vw0-dX-fge"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Nz9-QI-kLJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Political Jokes" id="y2t-tX-GlB"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="politicLabel" destination="2pA-9j-JjH" id="0rt-MM-DnK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aUT-bC-6R4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1774" y="801"/>
+        </scene>
+        <!--Dad Jokes-->
+        <scene sceneID="KJX-Wh-jgO">
+            <objects>
+                <viewController id="mXq-Qb-7MR" customClass="JokeViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XIp-0h-iXo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dad Joke" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0A-mz-Yae">
+                                <rect key="frame" x="119.5" y="65" width="136" height="48"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3q-ct-2fb">
+                                <rect key="frame" x="129.5" y="513" width="116" height="60"/>
+                                <color key="backgroundColor" red="0.83642325129999995" green="0.070588781190000005" blue="0.0" alpha="0.52561069540000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="2eW-SC-q9p"/>
+                                    <constraint firstAttribute="width" constant="116" id="lL9-9o-uk8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="32"/>
+                                <state key="normal" title="Flip">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dadJokeFlip:" destination="mXq-Qb-7MR" eventType="touchUpInside" id="YC6-zT-1rL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What happens to Frogs when they illegally park their cars?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBt-Hk-5Fl">
+                                <rect key="frame" x="10" y="305.5" width="355" height="56"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eBt-Hk-5Fl" firstAttribute="leading" secondItem="Edh-fP-FJl" secondAttribute="leading" constant="10" id="7ba-E8-jIy"/>
+                            <constraint firstItem="eBt-Hk-5Fl" firstAttribute="centerY" secondItem="XIp-0h-iXo" secondAttribute="centerY" id="8GJ-qy-t1j"/>
+                            <constraint firstItem="c0A-mz-Yae" firstAttribute="centerX" secondItem="XIp-0h-iXo" secondAttribute="centerX" id="C4a-aF-T73"/>
+                            <constraint firstItem="Edh-fP-FJl" firstAttribute="bottom" secondItem="X3q-ct-2fb" secondAttribute="bottom" constant="45" id="XXJ-6Z-dLo"/>
+                            <constraint firstItem="Edh-fP-FJl" firstAttribute="trailing" secondItem="eBt-Hk-5Fl" secondAttribute="trailing" constant="10" id="g0H-Pm-uIS"/>
+                            <constraint firstItem="X3q-ct-2fb" firstAttribute="centerX" secondItem="XIp-0h-iXo" secondAttribute="centerX" id="p2w-Ye-Uvq"/>
+                            <constraint firstItem="c0A-mz-Yae" firstAttribute="top" secondItem="Edh-fP-FJl" secondAttribute="top" constant="45" id="qnE-y3-8fD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Edh-fP-FJl"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dad Jokes" id="HZG-zQ-Ffm"/>
+                    <connections>
+                        <outlet property="dadLabel" destination="eBt-Hk-5Fl" id="0CR-bK-ect"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O9Q-RJ-dC3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1773.5999999999999" y="-618.44077961019491"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="z4k-jg-W6d">
+            <objects>
+                <tabBarController id="fa8-E6-cN8" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rKu-pg-wjU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="mXq-Qb-7MR" kind="relationship" relationship="viewControllers" id="Ixh-k9-FbF"/>
+                        <segue destination="2he-nf-j0x" kind="relationship" relationship="viewControllers" id="axm-Vy-cjF"/>
+                        <segue destination="mWI-s9-Tvn" kind="relationship" relationship="viewControllers" id="EIb-ZN-Css"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vez-db-ZW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824" y="87"/>
+        </scene>
+    </scenes>
+</document>
