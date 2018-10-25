@@ -58,12 +58,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are my chances at getting into UW CSE?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m75-FK-kYy">
+                                <rect key="frame" x="20" y="305.5" width="335" height="56"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXD-u0-699">
-                                <rect key="frame" x="129.5" y="513" width="116" height="60"/>
+                                <rect key="frame" x="189" y="488" width="116" height="60"/>
                                 <color key="backgroundColor" red="0.83642325129999995" green="0.070588781190000005" blue="0.0" alpha="0.52561069540000005" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="6iW-rD-d1R"/>
-                                    <constraint firstAttribute="width" constant="116" id="CLy-dv-2mD"/>
+                                    <constraint firstAttribute="height" constant="60" id="EvI-nQ-6F5"/>
+                                    <constraint firstAttribute="width" constant="116" id="uXb-7e-VlE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="32"/>
                                 <state key="normal" title="Flip">
@@ -74,20 +80,14 @@
                                     <action selector="CSEFlip:" destination="2he-nf-j0x" eventType="touchUpInside" id="hkl-GC-Sdi"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are my chances at getting into UW CSE?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m75-FK-kYy">
-                                <rect key="frame" x="20" y="305.5" width="335" height="56"/>
-                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="m75-FK-kYy" firstAttribute="leading" secondItem="5ci-tm-nzh" secondAttribute="leading" constant="20" id="EvK-js-day"/>
-                            <constraint firstItem="5ci-tm-nzh" firstAttribute="bottom" secondItem="dXD-u0-699" secondAttribute="bottom" constant="45" id="Fei-Rg-6TY"/>
                             <constraint firstItem="bT2-c5-ydC" firstAttribute="top" secondItem="5ci-tm-nzh" secondAttribute="top" constant="45" id="HIu-hj-PFA"/>
-                            <constraint firstItem="dXD-u0-699" firstAttribute="centerX" secondItem="oAO-VU-MQg" secondAttribute="centerX" id="ToZ-Lq-u0S"/>
                             <constraint firstItem="m75-FK-kYy" firstAttribute="centerY" secondItem="oAO-VU-MQg" secondAttribute="centerY" id="Val-Yt-ARX"/>
+                            <constraint firstItem="5ci-tm-nzh" firstAttribute="bottom" secondItem="dXD-u0-699" secondAttribute="bottom" constant="70" id="XUA-v1-WY3"/>
+                            <constraint firstItem="5ci-tm-nzh" firstAttribute="trailing" secondItem="dXD-u0-699" secondAttribute="trailing" constant="70" id="YFU-bu-Xwr"/>
                             <constraint firstAttribute="trailing" secondItem="m75-FK-kYy" secondAttribute="trailing" constant="20" id="iYg-iJ-tJP"/>
                             <constraint firstItem="bT2-c5-ydC" firstAttribute="centerX" secondItem="oAO-VU-MQg" secondAttribute="centerX" id="qTi-og-jDb"/>
                         </constraints>
@@ -116,12 +116,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The 2016 U.S. Presidential Election." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pA-9j-JjH">
+                                <rect key="frame" x="20" y="305.5" width="335" height="56"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejE-T4-FkU">
-                                <rect key="frame" x="129.5" y="513" width="116" height="60"/>
+                                <rect key="frame" x="189" y="488" width="116" height="60"/>
                                 <color key="backgroundColor" red="0.83642325129999995" green="0.070588781190000005" blue="0.0" alpha="0.52561069540000005" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="ebT-s1-7zr"/>
-                                    <constraint firstAttribute="width" constant="116" id="inw-fM-ECJ"/>
+                                    <constraint firstAttribute="width" constant="116" id="gD5-Bc-A2r"/>
+                                    <constraint firstAttribute="height" constant="60" id="yt7-ov-Cxm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="32"/>
                                 <state key="normal" title="Flip">
@@ -132,22 +138,16 @@
                                     <action selector="politicFlip:" destination="mWI-s9-Tvn" eventType="touchUpInside" id="Sdf-dG-d4n"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The 2016 U.S. Presidential Election." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pA-9j-JjH">
-                                <rect key="frame" x="20" y="305.5" width="335" height="56"/>
-                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="D8x-8I-iUv" firstAttribute="top" secondItem="Nz9-QI-kLJ" secondAttribute="top" constant="45" id="AsM-jH-0tL"/>
                             <constraint firstItem="2pA-9j-JjH" firstAttribute="centerY" secondItem="BGK-fU-j73" secondAttribute="centerY" id="LZf-Fl-E6M"/>
                             <constraint firstItem="2pA-9j-JjH" firstAttribute="leading" secondItem="Nz9-QI-kLJ" secondAttribute="leading" constant="20" id="QLL-uw-VRH"/>
-                            <constraint firstItem="Nz9-QI-kLJ" firstAttribute="bottom" secondItem="ejE-T4-FkU" secondAttribute="bottom" constant="45" id="XEc-5Y-fRu"/>
                             <constraint firstItem="D8x-8I-iUv" firstAttribute="centerX" secondItem="BGK-fU-j73" secondAttribute="centerX" id="jYK-Bg-Ghf"/>
-                            <constraint firstItem="ejE-T4-FkU" firstAttribute="centerX" secondItem="BGK-fU-j73" secondAttribute="centerX" id="lcB-5L-Gte"/>
+                            <constraint firstItem="Nz9-QI-kLJ" firstAttribute="trailing" secondItem="ejE-T4-FkU" secondAttribute="trailing" constant="70" id="rgn-ga-TcG"/>
                             <constraint firstItem="Nz9-QI-kLJ" firstAttribute="trailing" secondItem="2pA-9j-JjH" secondAttribute="trailing" constant="20" id="vw0-dX-fge"/>
+                            <constraint firstItem="Nz9-QI-kLJ" firstAttribute="bottom" secondItem="ejE-T4-FkU" secondAttribute="bottom" constant="70" id="wrb-gS-O6s"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Nz9-QI-kLJ"/>
                     </view>
@@ -175,12 +175,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What happens to Frogs when they illegally park their cars?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBt-Hk-5Fl">
+                                <rect key="frame" x="10" y="305.5" width="355" height="56"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3q-ct-2fb">
-                                <rect key="frame" x="129.5" y="513" width="116" height="60"/>
+                                <rect key="frame" x="189" y="488" width="116" height="60"/>
                                 <color key="backgroundColor" red="0.83642325129999995" green="0.070588781190000005" blue="0.0" alpha="0.52561069540000005" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="2eW-SC-q9p"/>
-                                    <constraint firstAttribute="width" constant="116" id="lL9-9o-uk8"/>
+                                    <constraint firstAttribute="width" constant="116" id="eZf-JB-9I5"/>
+                                    <constraint firstAttribute="height" constant="60" id="ksf-gf-jt8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="32"/>
                                 <state key="normal" title="Flip">
@@ -191,21 +197,15 @@
                                     <action selector="dadJokeFlip:" destination="mXq-Qb-7MR" eventType="touchUpInside" id="YC6-zT-1rL"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What happens to Frogs when they illegally park their cars?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBt-Hk-5Fl">
-                                <rect key="frame" x="10" y="305.5" width="355" height="56"/>
-                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Edh-fP-FJl" firstAttribute="trailing" secondItem="X3q-ct-2fb" secondAttribute="trailing" constant="70" id="43r-A1-pKf"/>
                             <constraint firstItem="eBt-Hk-5Fl" firstAttribute="leading" secondItem="Edh-fP-FJl" secondAttribute="leading" constant="10" id="7ba-E8-jIy"/>
                             <constraint firstItem="eBt-Hk-5Fl" firstAttribute="centerY" secondItem="XIp-0h-iXo" secondAttribute="centerY" id="8GJ-qy-t1j"/>
                             <constraint firstItem="c0A-mz-Yae" firstAttribute="centerX" secondItem="XIp-0h-iXo" secondAttribute="centerX" id="C4a-aF-T73"/>
-                            <constraint firstItem="Edh-fP-FJl" firstAttribute="bottom" secondItem="X3q-ct-2fb" secondAttribute="bottom" constant="45" id="XXJ-6Z-dLo"/>
+                            <constraint firstItem="Edh-fP-FJl" firstAttribute="bottom" secondItem="X3q-ct-2fb" secondAttribute="bottom" constant="70" id="YJk-O1-CQz"/>
                             <constraint firstItem="Edh-fP-FJl" firstAttribute="trailing" secondItem="eBt-Hk-5Fl" secondAttribute="trailing" constant="10" id="g0H-Pm-uIS"/>
-                            <constraint firstItem="X3q-ct-2fb" firstAttribute="centerX" secondItem="XIp-0h-iXo" secondAttribute="centerX" id="p2w-Ye-Uvq"/>
                             <constraint firstItem="c0A-mz-Yae" firstAttribute="top" secondItem="Edh-fP-FJl" secondAttribute="top" constant="45" id="qnE-y3-8fD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Edh-fP-FJl"/>
